@@ -19,10 +19,13 @@ filo=open('ejem.html', 'w')
 
 filo.write(d1)
 
+n=1
 
 for ss in li:
- v1= '<p> <a href="C:/Users/Mónica Monroy/OneDrive/Desktop/Extinción/'+ ss + '"> Artículo </a> </p>'
+ v1= '<p> <a href="C:/Users/Mónica Monroy/OneDrive/Desktop/Extinción/'+ ss + '">' + 'Artículo ' + str(n) + '</a> </p>'
+ n=n+1
  filo.write(v1)
 
 filo.write(d2)
 filo.close()
+
